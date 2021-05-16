@@ -77,19 +77,25 @@ https://templatemo.com/tm-562-space-dynamic
   <!-- ***** Header Area End ***** -->
 
   <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div id="particles-js"></div>
     <div class="container">
-      <div id="particles-js"></div>
+      
       <div class="row">
         <div class="col-lg-12">
           <div class="row">
             <div class="col-lg-6 align-self-center">
               <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                <h6>Welcome to ImageZero</h6>
+                <h6>Welcome to ImageZero,</h6>
                 <h2>Take your <em>idea</em> into <span>Digital</span> Enhancement.</h2>
                 <p>We Design and build high-quality websites. Whether you’re promoting your business, showcasing your work, opening your store or starting a blog. You can get it all with connect us.</p>
-                <li class="scroll-to-section">
+               
+                <div class="scroll-to-section">
                   <div class="main-red-button"><a href="#contact">Contact Now</a></div>
-                </li>
+                </div>
+                <br/>
+              <div class="typehead">
+                <h2><span class="typeMoto"></span></h2>
+              </div>
               </div>
             </div>
             <div class="col-lg-6">
@@ -171,12 +177,16 @@ https://templatemo.com/tm-562-space-dynamic
     <div class="container">
       <div class="row">
         <div class="col-lg-6 align-self-center  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+      
+          <div class="wrapper">
+            <h2>Here we are with <span class="typeLanguages"></span></h2>
+          </div>
+          <br/>
+          <br/>
           <div class="left-image">
             <img src="assets/images/services-left-image.png" alt="">
           </div>
-          <div class="wrapper">
-            <h2>Here we are with <span class="type"></span></h2>
-          </div>
+          
         </div>
         <div class="col-lg-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
           <div class="section-heading">
@@ -464,12 +474,19 @@ https://templatemo.com/tm-562-space-dynamic
   <script src="assets/js/templatemo-custom.js"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script>
-    var typed = new Typed('.type', {
+    var typed = new Typed('.typeLanguages', {
       strings: ['HTML', 'CSS', 'JavaScript', 'WordPress', 'php', 'mysql', 'React', 'Bootstrap', 'jQuery'],
       typeSpeed: 60,
       backSpeed: 60,
       loop: true
     });
+
+    var typeMoto = new Typed('.typeMoto', {
+        strings: ['Dream Big.','Make it Happen..!'],
+        typeSpeed: 60,
+        backSpeed: 60,
+        loop: true
+      });
      particlesJS('particles-js',
 
         {

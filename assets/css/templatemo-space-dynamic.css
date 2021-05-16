@@ -287,7 +287,9 @@ body {
 	border-radius: 23px;
 	letter-spacing: 0.25px;
 }
-
+.main-red-button a:hover {
+	background-color: #03a4ed;
+}
 .main-white-button a {
 	display: inline-block;
 	background-color: #fff;
@@ -1712,7 +1714,6 @@ responsive
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 40px;
 	font-size: 5vw;
 	z-index: 10;
 }
@@ -1722,8 +1723,9 @@ responsive
 
 	color: #002c5f;
 }
-.type {
-	color: #cc058a;
+.typeLanguages {
+	color: #fe3f40;
+
 	font-style: italic;
 }
 #particles-js {
