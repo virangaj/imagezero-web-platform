@@ -664,8 +664,8 @@ header
 
 @media (max-width: 1200px) {
 	.header-area .main-nav .nav li {
-		padding-left: 12px;
-		padding-right: 12px;
+		padding-left: 9px;
+		padding-right: px;
 	}
 	.header-area .main-nav:before {
 		display: none;
@@ -1431,23 +1431,25 @@ contact
 .contact-us .section-heading h2 span {
 	color: #fff;
 }
-
+.about-us .section-heading h2 {
+	color: #fff;
+}
 .contact-us .section-heading p {
 	color: #fff;
 	margin-top: 30px;
 }
 
-.phone-info {
+.email-info {
 	margin-top: 40px;
 }
 
-.phone-info h4 {
+.email-info h4 {
 	font-size: 20px;
 	font-weight: 700;
 	color: #fff;
 }
 
-.phone-info h4 span i {
+.email-info h4 span i {
 	width: 46px;
 	height: 46px;
 	display: inline-block;
@@ -1459,14 +1461,21 @@ contact
 	font-size: 22px;
 	margin-left: 30px;
 	margin-right: 15px;
+	transition: transform 0.2s;
 }
 
-.phone-info h4 span a {
+.email-info h4 span a {
 	color: #fff;
 	font-size: 15px;
 	font-weight: 400;
 }
 
+.email-info h4 span i:hover {
+	color: #2ca0ff;
+	-ms-transform: scale(1.2); /* IE 9 */
+	-webkit-transform: scale(1.2); /* Safari 3-8 */
+	transform: scale(1.2);
+}
 form#contact .contact-dec {
 	position: absolute;
 	right: -166px;
@@ -1601,6 +1610,7 @@ responsive
 		position: absolute;
 		bottom: -220px;
 		right: 0;
+		display: none;
 	}
 	.about-us .services {
 		text-align: center;
@@ -1627,12 +1637,16 @@ responsive
 		margin-bottom: 45px;
 	}
 	.our-services .section-heading h2,
+	.about-us .section-heading h2,
 	.our-services .section-heading p {
 		margin-right: 0px;
 		text-align: center;
 	}
 	.our-portfolio .section-heading h2 {
 		margin: 0px 0px 80px 0px;
+	}
+	.about-us .section-heading h2 {
+		color: #191a20;
 	}
 	.our-portfolio .item {
 		margin-bottom: 15px;
@@ -1677,6 +1691,18 @@ responsive
 	footer p {
 		margin: 15px 0px 30px 0px;
 	}
+	.email-info h4 span i {
+		width: 35px;
+		height: 35px;
+
+		display: inline-block;
+		text-align: center;
+		line-height: 35px;
+		color: #ff3b2c;
+		font-size: 18px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -1701,11 +1727,11 @@ responsive
 	.our-blog .right-list .right-image img {
 		width: 100%;
 	}
-	.phone-info h4 span {
+	.email-info h4 span {
 		display: block;
 		margin-top: 15px;
 	}
-	.phone-info h4 span i {
+	.email-info h4 span i {
 		margin-left: 0px;
 	}
 }
